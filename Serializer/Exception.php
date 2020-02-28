@@ -11,10 +11,11 @@ declare(strict_types=1);
  * with this source code in the file LICENSE.
  */
 
-namespace Xezilaires\Bridge\Symfony\Serializer;
+namespace Xezilaires\Serializer;
 
 use Symfony\Component\Serializer\Exception\ExceptionInterface;
+use Xezilaires\Exception as BaseException;
 
-interface Exception extends \Throwable, ExceptionInterface
+interface Exception extends BaseException, ExceptionInterface
 {
 }
